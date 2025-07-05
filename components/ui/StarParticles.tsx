@@ -1,12 +1,20 @@
 "use client";
 import { useEffect } from "react";
 
+interface Star {
+  x: number;
+  y: number;
+  radius: number;
+  alpha: number;
+  delta: number;
+}
+
 export default function StarParticles() {
   useEffect(() => {
     const canvas = document.getElementById("starCanvas") as HTMLCanvasElement;
     if (!canvas) return;
     const ctx = canvas.getContext("2d");
-    let stars: any[] = [];
+    let stars: Star[] = [];
 
     function resizeCanvas() {
       canvas.width = window.innerWidth;
@@ -44,7 +52,7 @@ export default function StarParticles() {
     }
 
     resizeCanvas();
-    generateStars(150); // More stars
+    generateStars(150);
     animateStars();
     window.addEventListener("resize", resizeCanvas);
 

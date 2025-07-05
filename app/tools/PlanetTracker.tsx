@@ -11,11 +11,18 @@ export default function PlanetTracker() {
   const [planets, setPlanets] = useState<Planet[]>([]);
 
   useEffect(() => {
+    interface Body {
+      englishName: string;
+      semimajorAxis: number;
+      isPlanet: boolean;
+    }
+
     async function fetchPlanets() {
       const res = await fetch("https://api.le-systeme-solaire.net/rest/bodies/");
       const json = await res.json();
-      setPlanets(json.bodies.filter((b: any) => b.isPlanet).slice(0, 8));
+      setPlanets(json.bodies.filter((b: Body) => b.isPlanet).slice(0, 8));
     }
+
     fetchPlanets();
   }, []);
 

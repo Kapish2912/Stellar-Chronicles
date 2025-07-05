@@ -3,6 +3,7 @@ import { constellations } from "@/components/ui/constellations";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { BsStars } from "react-icons/bs";
+import Image from "next/image";
 
 const events = [
   { title: "🌕 Full Moon", date: "July 21, 2025" },
@@ -37,11 +38,13 @@ export default function StargazingJourney() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.3 }}
           >
-            <img
-              src={featuredConstellation.image}
-              alt={featuredConstellation.name}
-              className="w-full h-full object-contain rounded-xl"
-            />
+            <Image
+  src={featuredConstellation.image}
+  alt={featuredConstellation.name}
+  width={400}
+  height={400}
+  className="w-full h-full object-contain rounded-xl"
+/>
           </motion.div>
         </div>
 
