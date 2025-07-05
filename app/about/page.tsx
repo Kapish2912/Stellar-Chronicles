@@ -1,10 +1,10 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { FaRocket, FaSatellite, FaGlobe, FaCode, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiThreedotjs, SiNasa } from "react-icons/si";
-import StarParticles from "@/components/ui/StarParticles";
 import Loader from "@/components/ui/Loader";
+import StarParticles from "@/components/ui/StarParticles";
+import { motion } from "framer-motion";
+import { FaReact } from "react-icons/fa";
+import { SiNasa, SiNextdotjs, SiTailwindcss, SiThreedotjs } from "react-icons/si";
 
 export default function AboutPage() {
   const cards = [

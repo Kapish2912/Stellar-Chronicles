@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
 import Loader from "@/components/ui/Loader"; // ✅ Import your loader
+import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

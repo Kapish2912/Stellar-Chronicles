@@ -1,10 +1,10 @@
-import './globals.css';
-import { Inter } from 'next/font/google';
-import type { Metadata } from 'next';
-import Navbar from '@/components/ui/Navbar';
-import HeroSection from '@/components/ui/HeroSection';
 import EventsSection from '@/components/ui/EventsSection';
+import HeroSection from '@/components/ui/HeroSection';
+import Navbar from '@/components/ui/Navbar';
 import StarParticles from '@/components/ui/StarParticles'; // ✅ New
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],

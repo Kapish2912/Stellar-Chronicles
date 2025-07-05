@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import StarParticles from "@/components/ui/StarParticles";
 import Loader from "@/components/ui/Loader";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import StarParticles from "@/components/ui/StarParticles";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const team = [
   {

@@ -1,8 +1,8 @@
 "use client";
-import { useState } from "react";
-import { motion } from "framer-motion";
-import { BsStars } from "react-icons/bs";
 import { constellations } from "@/components/ui/constellations";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { BsStars } from "react-icons/bs";
 
 const events = [
   { title: "🌕 Full Moon", date: "July 21, 2025" },

@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
-import StarParticles from "@/components/ui/StarParticles";
 import Loader from "@/components/ui/Loader";
+import StarParticles from "@/components/ui/StarParticles";
+import { motion } from "framer-motion";
 import Link from "next/link";
 
 export default function ExplorePage() {

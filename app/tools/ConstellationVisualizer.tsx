@@ -1,8 +1,7 @@
 "use client";
 
+import { OrbitControls, Stars } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-import { Stars, OrbitControls } from "@react-three/drei";
-import * as THREE from "three";
 
 export default function ConstellationVisualizer() {
   // Example star coordinates: RA/Dec converted to spherical
